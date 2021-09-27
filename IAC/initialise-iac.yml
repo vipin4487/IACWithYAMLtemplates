@@ -1,3 +1,6 @@
+parameters:
+  poolimage: ""
+
 steps:
     
-  - script: echo "Hello from YAML Templates in Azure DevOps Pipelines"
+  - script: echo "Hello from YAML Templates in Azure DevOps Pipelines. the pool image is ${{ parameters.poolimage }}"

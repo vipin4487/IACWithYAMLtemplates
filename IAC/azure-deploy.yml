@@ -17,4 +17,6 @@ parameters:
       - macOS-10.14
 
 steps:
-- template: initialise-iac.yml  
+- template: initialise-iac.yml
+  parameters:
+          poolimage: ${{ parameters.image }}  
