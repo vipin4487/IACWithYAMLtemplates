@@ -18,12 +18,12 @@ parameters:
 stages:
   # Initialise stages
   - stage: FirstStage
-    steps:
+    jobs:
     - template: initialise-iac.yml
       parameters:
               poolimage: ${{ parameters.image }}  
   - stage: SecondStage
-    steps:
+    jobs:
     - template: initialise-iac.yml
       parameters:
               poolimage: ${{ parameters.image }}  
