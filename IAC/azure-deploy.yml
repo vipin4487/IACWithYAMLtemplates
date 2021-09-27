@@ -15,8 +15,15 @@ parameters:
       - ubuntu-16.04
       - macOS-latest
       - macOS-10.14
-
-steps:
-- template: initialise-iac.yml
-  parameters:
-          poolimage: ${{ parameters.image }}  
+stages:
+  # Initialise stages
+  - stage: FirstStage
+    steps:
+    - template: initialise-iac.yml
+      parameters:
+              poolimage: ${{ parameters.image }}  
+  - stage: SecondStage
+    steps:
+    - template: initialise-iac.yml
+      parameters:
+              poolimage: ${{ parameters.image }}  
