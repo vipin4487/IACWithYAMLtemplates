@@ -4,4 +4,4 @@ jobs:
   - job: Intializing
     steps:
         
-      - script: echo "Hello from YAML Templates in Azure DevOps Pipelines. the pool image is ${{ parameters.poolimage }}"
+      - script: echo "new Hello from YAML Templates in Azure DevOps Pipelines. the pool image is ${{ parameters.poolimage }}"
