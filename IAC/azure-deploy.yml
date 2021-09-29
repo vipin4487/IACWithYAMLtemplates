@@ -21,9 +21,9 @@ stages:
     jobs:
     - template: initialise-iac.yml
       parameters:
-              poolimage: ${{ parameters.image }}  
+        poolimage: ${{ parameters.image }}  
   - stage: SecondStage
     jobs:
     - template: initialise-iac.yml
       parameters:
-              poolimage: ${{ parameters.image }}  
+        poolimage: ${{ parameters.image }}  
